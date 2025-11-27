@@ -1,0 +1,70 @@
+body {
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 640px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #ff6a00;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin: 0 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ee0979;
+}
+
+.array-row, #starting-array, .step-row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.cell {
+  background-color: #222;
+  color: #eee;
+  margin: 0 5px;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: border 0.3s;
+}
+
+.cell.sorted {
+  background-color: #2ecc71;
+  color: #121212;
+}
+
+.cell.swap {
+  background-color: #e74c3c;
+  color: #fff;
+  transition: background-color 0.5s;
+  }
